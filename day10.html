@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+            color: black;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: paleturquoise;
+            /* box-shadow:7px 7px 10px aqua ; */
+            /* box-shadow:7px 7px 10px 20px aqua ; */
+            
+            
+        }
+        #Card1{
+            box-shadow:-5px -5px aqua;
+
+        }
+        #Card4{
+            box-shadow:5px 5px aqua;
+
+        }
+        #Card3{
+            box-shadow: inset 5px 5px rgb(13, 13, 13); 
+        }
+        #Card6{
+            box-shadow: inset -5px -5px aqua; 
+        }
+        #Card2{
+            box-shadow: 5px 5px pink,10px 10px yellow;
+        }
+        #Card5{
+            box-shadow: -5px -5px pink,-10px -10px yellow;
+        }
+        .card h2{
+            text-shadow: 2px 1px white;
+            text-shadow: -2px -1px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="Card1"> <h2> HTML Course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo odio voluptas ullam sit? Quas nostrum deleniti eveniet commodi dolores minus voluptates tempora mollitia quaerat libero! Velit expedita, recusandae autem amet blanditiis laboriosam nam?</p>
+    </div>
+        <div class="card" id="Card2"> <h2>PYTHON Course</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit tempora odit consequatur adipisci mollitia? Minima optio nobis aspernatur error quae consequatur beatae vitae hic, sunt delectus architecto molestias dolor, obcaecati esse natus ullam?</p> 
+        </div>
+        <div class="card" id="Card3"> <h2> JAVA Course</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus alias commodi ipsum debitis culpa, tempora itaque hic, maiores voluptatibus voluptatum at ea pariatur iure quisquam exercitationem. Soluta est, assumenda eligendi nulla nam aperiam eos.</p></div>
+    </div>
+    <div class="container">
+        <div class="card" id="Card4"> <h2> Card1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo odio voluptas ullam sit? Quas nostrum deleniti eveniet commodi dolores minus voluptates tempora mollitia quaerat libero! Velit expedita, recusandae autem amet blanditiis laboriosam nam?</p>
+    </div>
+        <div class="card" id="Card5"> <h2>Card2</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam impedit tempora odit consequatur adipisci mollitia? Minima optio nobis aspernatur error quae consequatur beatae vitae hic, sunt delectus architecto molestias dolor, obcaecati esse natus ullam?</p> 
+        </div>
+        <div class="card" id="Card6"> <h2> Card3</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus alias commodi ipsum debitis culpa, tempora itaque hic, maiores voluptatibus voluptatum at ea pariatur iure quisquam exercitationem. Soluta est, assumenda eligendi nulla nam aperiam eos.</p></div>
+    </div>
+</body>
+</html>
